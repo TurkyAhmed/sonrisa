@@ -1,0 +1,360 @@
+:root{
+    --myblue-color:#353897;
+    --myred-color:rgba(255, 0, 0, 0.799);
+    --mypink-color:#fff2f2;
+    --mylaight-cyan-color:rgb(238 247 255);
+    --myheader-red-color:#dd3333;
+    --myorange-color:#f4572e;
+
+}
+
+.bg-myblue{
+    background-color: var(--myblue-color);
+}
+.bg-mypink{
+    background-color: var(--mypink-color);
+}
+.bg-mylightcyan{
+    background-color: var(--mylaight-cyan-color);
+}
+
+.text-myblue{
+    color: var(--myblue-color);
+}
+
+.text-myheader-red{
+    color: var(--myheader-red-color);
+}
+
+.text-myorange{
+    color: var(--myorange-color);
+}
+.mywidth-33rem{
+    width: 33rem;
+}
+
+.mywidth-22rem{
+    width: 22rem;
+}
+
+.myms-7rem{
+    margin-left: 7rem;
+}
+
+.font-serif{
+    font-family: serif;
+}
+
+.fs-3-4{
+    font-size: 1.3rem;
+}
+
+.doctor-badge{
+    top: 2.6rem !important;
+    right: 5.4rem;
+    border-radius: 3px;
+    font-family: serif;
+    padding: 0.6rem;
+    font-size: 1rem;
+}
+    
+
+
+.my-list-stil{
+    list-style: none;
+    margin-left: -1rem;
+    font-size: 1rem;
+    padding-left: 0.4rem;
+}
+
+.my-list-stil::marker{
+    content: "+";
+    color: var(--myred-color);
+    font-size: 1.4rem;
+ 
+}
+
+a.mynav-header{
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+}
+
+
+.inner{
+    overflow-x: scroll;
+}
+
+section{
+    margin-bottom: 8rem;
+}
+h6{
+    text-transform: uppercase;
+    font-family: monospace;
+    font-size: 14px;
+    color: var(--myheader-red-color);
+}
+h3{
+    color: #353897;
+    font-size: 3rem;
+    background-color: #fff;
+}
+
+img{
+    width: 100%;
+}
+
+.navbar-brand img{
+    width: 3rem;
+    margin-left: 4rem;
+    margin-right: 12rem;
+}
+
+.navbar li{
+    margin: 0 0.5rem;
+
+}
+ul.navbar-nav >li:hover,
+ul.navbar-nav >li:active {
+    transform: scale(1.1,1.1);
+}
+
+input[type='search'] + i{
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+} 
+
+ul.navbar-nav >li >a:hover,
+ul.navbar-nav >li >a:active{
+    color: var(--myblue-color) !important;
+}
+
+.carousel-caption.d-none.d-md-block.top-0{
+    /* position: absolute; */
+    /* left: -45rem; */
+    transform:translate(3%,25%);
+    text-align: left;
+    
+}
+
+.carousel-caption.d-none.d-md-block.top-0 >h6:first-of-type{
+    pad: 0.25rem;
+    background-color: orange;
+}
+
+.svgclass{
+    position: absolute;
+    top: 50%;
+    left: 82%;
+    transform: translate(-50%,-50%);
+}
+
+.path{
+    stroke: var(--myblue-color);
+    stroke-dasharray: 12.5;
+    stroke-dashoffset: 6;
+  }
+
+.path:hover{
+    stroke-dasharray: 107;
+    transition: all 1s;
+    transition-timing-function: ease-in-out;
+}
+
+.card .fa.fa-angle-right{
+    z-index: 2;
+}
+
+.card.working-hours{
+    position: relative;
+}
+.card.working-hours a{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding:  1rem;
+    border-radius: 0 0 7px 7px;
+}
+
+.btn-player{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
+.btn-player:hover{
+    width: 5.5rem;
+    height: 5.5rem;
+    transition: all 0.2s;
+    transition-timing-function: linear;
+}
+
+.btn-player i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    width: 4.3rem;
+    height: 4.3rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    color: var(--myheader-red-color);
+}
+.btn-player i::before{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.advice img{
+    width: 5rem;
+    margin-right: 1rem;
+}
+
+.doctors img{
+    width: 10rem;
+    margin: 2rem auto 0;
+}
+
+.row.bg-myblue.text-white {
+    padding-left: 8rem ;
+}
+
+.fast-and-profeissnal{
+    padding-left: 5rem;
+}
+
+.fast-and-profeissnal ul li{
+    margin: 4rem 0;
+    list-style: none;
+    border-bottom: 3px solid #ffe1e1;
+    padding-bottom: 1rem;
+    width: 18rem;
+}
+
+.fast-and-profeissnal ul li:hover,
+.fast-and-profeissnal ul li:active{
+    border-bottom:3px solid #dc2c2c ;
+}
+
+.fast-and-profeissnal ul li a{
+    color: var(--myblue-color);
+    text-decoration: none;
+
+}
+
+.fast-and-profeissnal img{
+    /* height: 22rem; */
+    width: 34rem;
+    padding-bottom: 7rem;
+    margin-left: 3rem;
+}
+
+.fast-and-profeissnal h2{
+    font-size: 2.2rem;
+}
+
+.fast-and-profeissnal .fast-image {
+    padding-left: 5rem;
+}
+
+.doctors-expert .card{
+    width: 18.5rem;
+    border: 0;
+}
+.doctors-expert span.badge{
+    z-index: 1;
+    padding: 0.5rem 0.8rem;
+    left: -1.2rem;
+    top: 1rem;
+}
+
+svg.bi.bi-share{
+    height: 2rem;
+    width: 1.3rem;
+}
+
+.request-appointment > .row{
+    height: 37rem
+}
+
+.request-appointment img{
+    height: 100%;
+
+}
+
+.request-appointment svg {
+    left: 85%;
+    top: 0;
+    height: 100%;
+
+}
+
+.request-appointment h3{
+    margin-top: 5rem;
+}
+
+.request-appointment input,
+.request-appointment textarea{
+    width: 100%;
+    height: 2.7rem;
+    margin-bottom: 1rem;
+}
+
+.request-appointment input::placeholder{
+padding-left: 1.3rem;
+}
+
+.request-appointment textarea{
+    height: 7rem;
+}
+
+.request-appointment a{
+    width: 13rem;
+    height: 3.5rem;
+    margin-left: 0.8rem;
+    background-color: var(--myblue-color);
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+.request-appointment a h6{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    letter-spacing: 2px;
+    width: 8rem;
+    font-size: 12px;
+}
+
+.lastest-news .card{
+    border: 0;
+    width: 24rem;
+}
+
+.lastest-news .card h6{
+    /* width: 10rem; */
+    letter-spacing: 2px;
+    display: inline-block;
+}
+
+footer{
+    background-color: var(--mypink-color);
+margin-bottom: 12rem;
+}
+
+footer img{
+    width: 8rem;
+}
