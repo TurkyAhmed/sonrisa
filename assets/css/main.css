@@ -8,6 +8,10 @@
 
 }
 
+body{
+    overflow-x: hidden;
+}
+
 .bg-myblue{
     background-color: var(--myblue-color);
 }
@@ -49,13 +53,46 @@
     font-size: 1.3rem;
 }
 
+.pb-5rem{
+    padding-bottom: 5rem;
+}
+
+.carousel-indicators button{
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+}
+
+.carousel-indicators .active{
+    background-color: #367982 !important;
+    transform: scale(1.5,1.5);
+}
+
+.carousel-indicators button:nth-child(odd){
+    background-color: var(--myheader-red-color);
+}
+
+.carousel-indicators button:nth-child(even){
+    background-color: var(--myblue-color);
+}
+
+.carousel-control-prev span i,
+.carousel-control-next span i{
+    font-size: 3rem;
+    color: var(--myblue-color);
+    background-color: #ffffff;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
 .doctor-badge{
-    top: 2.6rem !important;
-    right: 5.4rem;
+    /* top: 2.6rem !important;
+    right: 25%;
+ 
     border-radius: 3px;
     font-family: serif;
     padding: 0.6rem;
-    font-size: 1rem;
+    font-size: 1rem; */
 }
     
 
@@ -79,10 +116,6 @@ a.mynav-header{
     letter-spacing: 2.5px;
 }
 
-
-.inner{
-    overflow-x: scroll;
-}
 
 section{
     margin-bottom: 8rem;
@@ -138,8 +171,40 @@ ul.navbar-nav >li >a:active{
 }
 
 .carousel-caption.d-none.d-md-block.top-0 >h6:first-of-type{
-    pad: 0.25rem;
+    /* pad: 0.25rem; */
     background-color: orange;
+}
+
+.feature .card{
+    width: 30.5rem;
+}
+
+.working-hours ul{
+    padding-left: 1.5rem;
+}
+
+.working-hours ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+.working-hours ul li:nth-child(even){
+    color: var(--myheader-red-color);
+}
+
+a.chat{
+    right: 0;
+    width: 8rem;
+    top:40rem;
+    position: fixed;
+    z-index: 2;
+    opacity: 0.5;
+}
+
+a.chat:hover{
+    opacity: 1;
 }
 
 .svgclass{
@@ -237,7 +302,8 @@ ul.navbar-nav >li >a:active{
     list-style: none;
     border-bottom: 3px solid #ffe1e1;
     padding-bottom: 1rem;
-    width: 18rem;
+    width: 21rem;
+    font-size: 1.25rem;
 }
 
 .fast-and-profeissnal ul li:hover,
@@ -263,11 +329,11 @@ ul.navbar-nav >li >a:active{
 }
 
 .fast-and-profeissnal .fast-image {
-    padding-left: 5rem;
+    /* padding-left: 5rem; */
 }
 
 .doctors-expert .card{
-    width: 18.5rem;
+    width: 25.5rem;
     border: 0;
 }
 .doctors-expert span.badge{
@@ -282,21 +348,19 @@ svg.bi.bi-share{
     width: 1.3rem;
 }
 
-.request-appointment > .row{
+/* .request-appointment > .row{
     height: 37rem
-}
+} */
 
-.request-appointment img{
+/* .request-appointment img{
     height: 100%;
+} */
 
-}
-
-.request-appointment svg {
+/* .request-appointment svg {
     left: 85%;
     top: 0;
     height: 100%;
-
-}
+} */
 
 .request-appointment h3{
     margin-top: 5rem;
@@ -341,7 +405,7 @@ padding-left: 1.3rem;
 
 .lastest-news .card{
     border: 0;
-    width: 24rem;
+    /* width: 24rem; */
 }
 
 .lastest-news .card h6{
@@ -358,3 +422,60 @@ margin-bottom: 12rem;
 footer img{
     width: 8rem;
 }
+
+/* edit in boot strab */
+.nav.nav-tabs .active{
+    color: #333;
+    background-color: transparent;
+    border-color:transparent;
+}
+
+.wrapper{
+    width: 75rem;
+}
+
+.wrapper>.inner {
+    transition: all 1s ease-in-out;
+  }
+
+/* .wrapper {
+    display: flex;
+    grid-gap: 1em;
+    overflow: hidden;
+    width: 55em;
+  }
+
+  .wrapper>.inner {
+    display: flex;
+    grid-gap: 1em;
+    transition: all 1s ease-in-out;
+  }
+
+  .card {
+    border-radius: 0.5em;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .card>img {
+    border-top-right-radius: inherit;
+    border-top-left-radius: inherit;
+    display: block;
+    width: 17.5em;
+  }
+
+  .card>.content {
+    background: #0a2640;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    padding: 1em;
+    text-align: center;
+  } */
+
+  #doctors .inner .card span.badge{
+    position: absolute;
+    z-index: 1;
+    padding: 0.9rem;
+    right: 7.1rem ;
+    top:2.3rem;
+
+  }
